@@ -1,0 +1,52 @@
+<div class="sq-sidebar-wrapper">
+    <div class="sq-logo-section">
+        <h2>Logo</h2>
+    </div>
+
+    <div class="sq-menu-section">
+        <!-- Main Section -->
+        <div class="menu-section-sub">
+            <div class="menu-heading-section">
+                <h6>Main</h6>
+            </div>
+            <div class="menu-list">
+                <div class="icon">
+                    <img src="assets/icons/apps.svg" width="16px" alt="">
+                </div>
+                <div class="label">Dashboard</div>
+            </div>
+        </div>
+
+        <!-- Accordion Section -->
+        <div class="menu-section">
+            <div class="menu-heading-section">
+                <h6>Main</h6>
+            </div>
+            <div class="accordion" *ngFor="let item of menuItems">
+                <div class="accordion-header" (click)="toggleAccordion(item)">
+                    <div class="icon">
+                        <img src="assets/icons/apps.svg" width="16px" alt="">
+                    </div>
+                    <div class="label">{{ item.label }}</div>
+                </div>
+                <div class="accordion-content" *ngIf="item.open">
+                    <div class="menu-item" *ngFor="let subItem of item.subMenu">
+                        {{ subItem }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-section-sub">
+            <div class="menu-heading-section">
+                <h6>Main</h6>
+            </div>
+            <div class="menu-list">
+                <div class="icon">
+                    <img src="assets/icons/apps.svg" width="16px" alt="">
+                </div>
+                <div class="label">Dashboard</div>
+            </div>
+        </div>
+
+    </div>
+</div>

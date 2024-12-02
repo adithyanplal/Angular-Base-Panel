@@ -1,0 +1,56 @@
+<header class="header-section bg-gray-900 text-white shadow-md py-4 px-6 flex items-center justify-between md:px-10">
+    <!-- Sidebar Icon -->
+    <div class="sidebar-icon">
+        <img src="assets/icons/menu.svg" width="18px" alt="menu" class="cursor-pointer" />
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section hidden md:block flex-1 max-w-xs mx-auto">
+        <input type="text"
+            class="w-full p-2 border border-gray-700 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Search..." />
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section flex items-center space-x-6">
+        <!-- Theme Switcher -->
+        <div class="theme-switcher">
+            <button class="p-2 rounded-full bg-gray-700 hover:bg-gray-600">
+                <img src="assets/icons/color-swatch.svg" width="20px" alt="theme" />
+            </button>
+        </div>
+
+        <!-- Language Changer -->
+        <div class="language-changer">
+            <button class="p-2 rounded-full bg-gray-700 hover:bg-gray-600">
+                <img src="assets/icons/globe-3.svg" width="20px" alt="language" />
+            </button>
+        </div>
+
+        <!-- Notification -->
+        <div class="notification">
+            <button class="p-2 rounded-full bg-gray-700 hover:bg-gray-600 relative">
+                <img src="assets/icons/bell-angular.svg" width="20px" alt="notification" />
+                <span
+                    class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+            </button>
+        </div>
+
+        <!-- User Profile -->
+        <div class="user-profile flex items-center space-x-3 cursor-pointer">
+            <div class="user-image w-10 h-10 rounded-full bg-gray-600">
+                <img src="assets/avatar/avatar.png" alt="">
+            </div>
+            <div class="user-details text-sm flex flex-col ">
+                <span class="user-name font-semibold">John Doe</span>
+                <span class="role-label text-gray-400">Admin</span>
+            </div>
+            <div class="dropdown-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>

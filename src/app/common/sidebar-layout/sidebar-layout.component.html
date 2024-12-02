@@ -1,0 +1,16 @@
+<div class="sq-main-wrapper">
+    <!-- Sidebar Section -->
+    <div [class.w-0]="!sidebarOpen" class="sq-sidebar-section md:w-64 w-0 md:block hidden">
+      <app-sidebar></app-sidebar>
+    </div>
+  
+    <!-- Right Content Wrapper -->
+    <div class="sq-right-content-wrapper flex-1">
+      <app-header (toggleSidebar)="toggleSidebar()"></app-header>
+      
+      <div class="sq-right-content">
+        <!-- Your content here -->
+      </div>
+    </div>
+  </div>
+  
